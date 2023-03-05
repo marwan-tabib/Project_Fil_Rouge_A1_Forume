@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Shape;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -12,6 +13,6 @@ class ShapeSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        Shape::factory()->count(5)->create();
     }
 }

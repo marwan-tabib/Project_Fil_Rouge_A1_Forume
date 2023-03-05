@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Materail;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -12,6 +13,6 @@ class MaterailSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        Materail::factory()->count(5)->create();
     }
 }
