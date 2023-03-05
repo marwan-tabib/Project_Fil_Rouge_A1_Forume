@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Shape;
+use App\Models\Tag;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -13,6 +14,6 @@ class TagSeeder extends Seeder
      */
     public function run(): void
     {
-        Shape::factory()->count(5)->create();
+        Tag::factory()->count(5)->create();
     }
 }
